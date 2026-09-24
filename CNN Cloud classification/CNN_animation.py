@@ -317,25 +317,30 @@ class CNNStepByStep(Scene):
         def grid_index(i, j):
             return i * 6 + j
 
+        def window_of(i, j):
+            idxs = [grid_index(i + di, j + dj) for di in range(3) for dj in range(3)]
+            return VGroup(*[patch_squares[k] for k in idxs])
+
+        highlight = SurroundingRectangle(window_of(0, 0), color=YELLOW, buff=0.02, stroke_width=5)
+        self.play(Create(highlight), run_time=0.3)
+
         for i in range(4):
             for j in range(4):
-                idxs = [grid_index(i + di, j + dj) for di in range(3) for dj in range(3)]
-                window = VGroup(*[patch_squares[k] for k in idxs])
-                highlight = SurroundingRectangle(window, color=YELLOW, buff=0.02, stroke_width=3)
-
                 out_idx = i * 4 + j
                 val = conv_grid[i, j]
                 norm = (val - vmin) / (vmax - vmin + 1e-8)
                 target_color = interpolate_color(BLUE, RED, norm)
                 val_text = Text(f"{val:.1f}", font_size=14).move_to(out_squares[out_idx])
 
+                new_highlight = SurroundingRectangle(window_of(i, j), color=YELLOW, buff=0.02, stroke_width=5)
                 self.play(
-                    Create(highlight),
+                    Transform(highlight, new_highlight),
                     out_squares[out_idx].animate.set_fill(target_color, opacity=0.85),
                     FadeIn(val_text),
-                    run_time=0.12,
+                    run_time=0.35,
                 )
-                self.remove(highlight)
+                self.wait(0.15)
+        self.play(FadeOut(highlight))
 
         self.wait(0.5)
         note = Text("× 32 filters like this one, each scanning the full 128×128 image",
