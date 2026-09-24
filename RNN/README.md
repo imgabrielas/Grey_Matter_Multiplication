@@ -1,6 +1,8 @@
 # Temperature RNN
 
-![RNN step-by-step animation](RNNStepByStep.gif)
+<p align="center">
+  <img src="RNNStepByStep.gif" alt="RNN step-by-step animation">
+</p>
 
 A PyTorch RNN that forecasts the next day's minimum temperature from a sliding window of the previous 30 days, trained on daily minimum temperatures in Melbourne, Australia (1981-1990).
 

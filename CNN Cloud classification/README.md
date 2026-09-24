@@ -1,6 +1,8 @@
 # Cloud Classification
 
-![CNN step-by-step animation](CNN_animation.gif)
+<p align="center">
+  <img src="CNN_animation.gif" alt="CNN step-by-step animation">
+</p>
 
 A PyTorch CNN that classifies cloud images into 7 types: cirriform, clear sky, cumulonimbus, cumulus, high cumuliform, stratiform, and stratocumulus clouds.
 
