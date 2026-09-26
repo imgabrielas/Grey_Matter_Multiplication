@@ -10,6 +10,12 @@ A PyTorch RNN that forecasts the next day's minimum temperature from a sliding w
 
 ## LSTM and GRU conclusion
 
+| Model | Score shown in notebook |
+|---|------------------------:|
+| RNN |              2.4°C RMSE |
+| LSTM |              2.2°C RMSE |
+| GRU |                4.8 RMSE |
+
 The notebook also evaluates two gated recurrent architectures. In the recorded run, the LSTM achieved about **2.20°C RMSE**. The GRU cell currently prints **4.8312** from `mean_squared_error`, which is MSE rather than RMSE; its equivalent RMSE is approximately **2.20°C** (`sqrt(4.8312)`). These results suggest that neither gated model clearly outperformed the baseline RNN on this dataset and setup. The scores should be compared only after using the same metric calculation and evaluation data for every model; these are single-run results and may vary with training.
 
 **Files:**
