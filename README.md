@@ -15,6 +15,8 @@ A collection of DL projects.
 ├── CNN Brain Tumor MRI/
 │   ├── README.md
 │   ├── Brain_tumor_classification.ipynb   # data loading, model, training, evaluation
+│   ├── animation.py                       # Manim animation of the model's CNN pipeline
+│   ├── BrainTumorCNNStepByStep.gif        # rendered output of animation.py
 │   └── data/
 │       ├── Training/      # training images, one subfolder per class
 │       └── Testing/       # test images, same 4 class subfolders

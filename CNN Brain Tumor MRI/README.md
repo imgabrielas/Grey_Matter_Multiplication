@@ -3,6 +3,10 @@
 ---
 #### DISCLAIMER: THIS IS NOT MEDICAL ADVICE, DO NOT SELF DIAGNOSE
 
+<p align="center">
+  <img src="BrainTumorCNNStepByStep.gif" alt="Brain Tumor MRI CNN step-by-step animation">
+</p>
+
 ## Overview
 A convolutional neural network (CNN) built with PyTorch that classifies brain MRI
 scans into four categories: **glioma**, **meningioma**, **pituitary tumor**, and
@@ -43,3 +47,11 @@ Open and run `Brain_tumor_classification.ipynb`, which:
 1. Loads and transforms the training/testing data
 2. Defines the CNN model
 3. Trains the model over 25 epochs, printing the running loss per epoch
+
+## Files
+- `Brain_tumor_classification.ipynb` — data loading, model definition, training loop
+- `data/Training`, `data/Testing` — image folders, one subfolder per class
+- `animation.py` — Manim animation that trains the real model (on a small, class-balanced
+  subset for speed) and shows, from raw scan to prediction, how preprocessing, convolution,
+  pooling, and the classifier work (`manim -pqh "animation.py" BrainTumorCNNStepByStep`)
+- `BrainTumorCNNStepByStep.gif` — rendered output of `animation.py`
