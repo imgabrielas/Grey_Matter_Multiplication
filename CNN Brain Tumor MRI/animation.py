@@ -1,6 +1,6 @@
 """
 Manim animation that walks through the whole Brain Tumor MRI CNN pipeline
-(see Brain_tumor_classification.ipynb) from raw scan to predicted class:
+(see Brain_Tumor_Classification.ipynb) from raw scan to predicted class:
 the preprocessing pipeline, exactly what a convolution kernel computes, the
 three conv+pool blocks, flatten, the linear classifier, the training curve,
 and held-out test metrics.

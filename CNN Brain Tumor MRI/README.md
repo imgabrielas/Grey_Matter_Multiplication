@@ -43,13 +43,13 @@ Trained with the Adam optimizer (`lr=0.001`) and cross-entropy loss, running on
 GPU when available (falls back to CPU).
 
 ## Usage
-Open and run `Brain_tumor_classification.ipynb`, which:
+Open and run `Brain_Tumor_Classification.ipynb`, which:
 1. Loads and transforms the training/testing data
 2. Defines the CNN model
 3. Trains the model over 25 epochs, printing the running loss per epoch
 
 ## Files
-- `Brain_tumor_classification.ipynb` — data loading, model definition, training loop
+- `Brain_Tumor_Classification.ipynb` — data loading, model definition, training loop
 - `data/Training`, `data/Testing` — image folders, one subfolder per class
 - `animation.py` — Manim animation that trains the real model (on a small, class-balanced
   subset for speed) and shows, from raw scan to prediction, how preprocessing, convolution,

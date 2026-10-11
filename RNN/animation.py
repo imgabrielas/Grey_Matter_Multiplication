@@ -1,5 +1,5 @@
 """
-Manim animation that walks through exactly what TemperatureRNN (see rnn.ipynb) does,
+Manim animation that walks through exactly what TemperatureRNN (see RNN_Temperature.ipynb) does,
 one time step at a time: how the input at day t and the memory carried over from
 day t-1 combine inside the 64 hidden neurons, and how the final hidden state is
 turned into a predicted temperature.

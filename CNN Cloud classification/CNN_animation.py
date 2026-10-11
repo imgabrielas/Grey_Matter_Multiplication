@@ -1,6 +1,6 @@
 """
 Manim animation that walks through the whole Cloud Classification CNN pipeline
-(see clouds.ipynb) from raw image to predicted class: data augmentation, exactly
+(see CNN_clouds.ipynb) from raw image to predicted class: data augmentation, exactly
 what a convolution kernel computes, the two conv+pool blocks, flatten, the linear
 classifier, the training curve, and held-out test metrics.
 
