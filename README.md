@@ -14,24 +14,40 @@ A collection of DL projects.
 .
 ├── CNN Brain Tumor MRI/
 │   ├── README.md
-│   ├── Brain_tumor_classification.ipynb   # data loading, model, training, evaluation
-│   ├── animation.py                       # Manim animation of the model's CNN pipeline
-│   ├── BrainTumorCNNStepByStep.gif        # rendered output of animation.py
+│   ├── Brain_Tumor_Classification.ipynb
+│   ├── animation.py
+│   ├── BrainTumorCNNStepByStep.gif
 │   └── data/
-│       ├── Training/      # training images, one subfolder per class
-│       └── Testing/       # test images, same 4 class subfolders
+│       ├── Training/
+│       └── Testing/
 │
 ├── CNN Cloud classification/
 │   ├── README.md
-│   ├── clouds.ipynb          # data loading, model, training, evaluation
+│   ├── CNN_clouds.ipynb
+│   ├── CNN_animation.py
+│   ├── CNN_animation.gif
 │   └── data/
-│       ├── clouds_train/     # training images, one subfolder per class
-│       └── clouds_test/      # test images, same 7 class subfolders
+│       ├── clouds_train/
+│       └── clouds_test/
 │
-└── RNN/
-    ├── README.md
-    ├── rnn.ipynb              # preprocessing, model, training, evaluation
-    ├── animation.py           # Manim animation of the model's forward pass
-    ├── RNNStepByStep.gif      # rendered output of animation.py
-    └── data.csv               # daily minimum temperatures, Melbourne (1981-1990)
+├── CNN Mnist Fashion/
+│   └── CNN_mnist_fashion.ipynb
+│
+├── Customer Purchase/
+│   └── Customer_Purchase.ipynb
+│
+├── RNN/
+│   ├── README.md
+│   ├── RNN_Temperature.ipynb
+│   ├── animation.py
+│   ├── RNNStepByStep.gif
+│   └── data.csv
+│
+└── Spoken Digit Recognition/
+    ├── Spoken_Digit_Recognition.ipynb
+    ├── data/
+    │   └── FSDD/
+    └── models/
+        ├── cnn_digit.pt
+        └── cnn_speaker.pt
 ```
